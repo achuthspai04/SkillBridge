@@ -14,6 +14,9 @@ body, html {
                 radial-gradient(circle at left bottom, #3f0541 10%, transparent 70%),
                 radial-gradient(circle at right bottom, #05022e 10%, transparent 70%);
     background-color: #000000; /* Fallback for older browsers */
+    background-size: cover;
+    background-position: center;
+    font-size: 1rem;
 }
 
 /* Background logo styles */
@@ -184,5 +187,10 @@ button:last-child {
 
     header {
         padding: 1rem 1.5rem; /* 16px 24px -> 1rem 1.5rem */
+    }
+}
+@media (max-width: 768px) {
+    body, html {
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
     }
 }

@@ -12,12 +12,12 @@ body {
     margin: 0;
 }
 .login-container {
-    background-color: #fff;
-    width: 567px;
-    height: 394px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #d5d4d4;
+    width: 31.44rem; /* 567px / 16 */
+    height: 15.63rem; /* 394px / 16 */
+    padding: 1.25rem; /* 20px / 16 */
+    border-radius: 0.3125rem; /* 5px / 16 */
+    box-shadow: 0px 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* 2px and 5px converted */
     width: fit-content;
     margin: 0 auto;
 }
