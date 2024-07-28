@@ -194,3 +194,11 @@ button:last-child {
         font-size: 0.875rem; /* Adjust font size for smaller screens */
     }
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.25rem; /* 20px -> 1.25rem */
+}
+
