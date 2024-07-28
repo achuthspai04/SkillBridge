@@ -47,6 +47,9 @@ def signup():
         flash('Signup successful! Please login.', 'success')
         return redirect(url_for('login'))
     return render_template('signup.html')
+@app.route('/AboutUs')
+def AboutUs():
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
