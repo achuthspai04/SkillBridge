@@ -29,6 +29,24 @@ def login():
         else:
             flash('Invalid email or password', 'danger')
     return render_template('loginpage.html')
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        conf_password = request.form['confirm_password']
+        if password != conf_password:
+            flash('Passwords do not match', 'danger')
+            return redirect(url_for('signup'))
+        conn = sqlite3.connect('users.db')
+        c = conn.cursor()
+        c.execute("INSERT INTO users (email, password) VALUES (?, ?)", (email, password))
+        conn.commit()
+        conn.close()
+        
+        flash('Signup successful! Please login.', 'success')
+        return redirect(url_for('login'))
+    return render_template('signup.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
