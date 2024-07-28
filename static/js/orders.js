@@ -1,20 +1,14 @@
 const Orders = [
     {
-        productName: 'JavaScript Tutorial',
+        productName: 'ML Model for face recognition',
         productNumber: '85743',
         paymentStatus: 'Due',
-        status: 'Pending'
+        status: 'Processing'
     },
     {
-        productName: 'CSS Full Course',
+        productName: 'Web app using React',
         productNumber: '97245',
         paymentStatus: 'Refunded',
-        status: 'Declined'
-    },
-    {
-        productName: 'Flex-Box Tutorial',
-        productNumber: '36452',
-        paymentStatus: 'Paid',
-        status: 'Active'
-    },
+        status: 'Completed'
+    }
 ]
